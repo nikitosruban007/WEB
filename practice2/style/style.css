@@ -1,0 +1,42 @@
+body {
+    background: #f6f6f6;
+}
+
+h1, h2, p, li, figcaption, blockquote{
+    font-family: Monospaced, sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p, blockquote {
+    font-size: 20px;
+}
+
+li {
+    font-size: 18px;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 14px;
+}
+
+img {
+    max-width: 47%;
+    display: block;
+    margin: auto;
+}
+
+.main {
+    max-width: 65%;
+    margin: auto;
+}
+
+.red {
+    color: #7d0011;
+    font-weight: bold;
+}
