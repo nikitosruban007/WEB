@@ -1,0 +1,24 @@
+table {
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    border-left: 2px dashed black;
+    border-right: 2px dashed black;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+td,th{
+    border:1px solid black;
+    border-collapse:collapse;
+    padding:15px 30px;
+    text-align:center;
+    background-color: #fff200;
+}
+
+.red {
+    background-color: #ff8282;
+}
+
+.green {
+    background-color: #98e398;
+}
