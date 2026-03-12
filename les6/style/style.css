@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.gradient-main-block {
+    background: linear-gradient(to bottom right, #9b17f8, #ff8620);
+    height: 51vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7%;
+}
+
+.main-block-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5%;
+}
+
+
+.main-block-text h1 {
+    max-width: 65vh;
+    text-align: center;
+    word-wrap: break-word;
+    color: white;
+    font-size: 50px;
+}
+
+.main-block-text p {
+    max-width: 75vh;
+    text-align: center;
+    word-wrap: break-word;
+    color: #ffdede;
+    font-size: 20px;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 20px;
+}
+nav li:hover{
+    color: #9810fa;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    z-index: 1000;
+    background: white;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 25%;
+    padding: 20px;
+}
+
+.logo-img {
+    font-size: 20px;
+    padding: 10px;
+    background: linear-gradient(to bottom right, #9b17f8, #ff8620);
+    border-radius: 50%;
+}
+
+.logo-text{
+    color: black;
+    padding: 0 5px;
+    font-size: 20px;
+}
+
+.btns-header {
+    display: flex;
+    gap: 25%
+}
+
+.btns-header button {
+    padding: 7px;
+    font-size: 15px;
+    border: none;
+    background: none;
+    border-radius: 25%;
+}
+
+.btns-header button:hover {
+    background: lightgray;
+}
+.main-block-buttons {
+    display: flex;
+    gap: 5%;
+}
+
+.main-block-buttons button {
+    white-space: nowrap;
+}
+
+
+#mbb1 {
+    background: white;
+    color: #9810fa;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+#mbb1:hover {
+    background: #e1e1e1;
+}
+
+#mbb2 {
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5%;
+    border: 1px solid white;
+}
+
+#mbb2:hover {
+
+    background: transparent;
+    color: white;
+}
+
