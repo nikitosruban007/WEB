@@ -6,181 +6,183 @@
     <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
-<header class="container">
-    <div class="logo">
-        <a href="#">
-            <span class="logo-img">🎁</span>
-            <span class="logo-text">Світ Сувенірів</span>
-        </a>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Головна</a></li>
-            <li><a href="#">Каталог</a></li>
-            <li><a>Про нас</a></li>
-            <li><a>Контакти</a></li>
-        </ul>
-    </nav>
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="#">
+                <span class="logo-img">🎁</span>
+                <span class="logo-text">Світ Сувенірів</span>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+        </nav>
 
-    <div class="btns-header">
-        <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-h svg-w"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></button>
-        <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-h svg-w"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg></button>
+        <div class="header-btns">
+            <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></button>
+            <a href="cart.html"><button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg></button></a>
+        </div>
     </div>
 </header>
 
 
-<main class="container-catalog">
+<main class="container section-padding">
     <h1>Каталог товарів</h1>
-    <p>Знайдіть ідеальний подарунок з нашої колекції унікальних сувенірів</p>
-    <div class="filter-buttons">
-        <button class="active">Всі товари</button>
-        <button>Посуд</button>
-        <button>Аксесуари</button>
-        <button>Декор</button>
-        <button>Текстиль</button>
-        <button>Одяг</button>
-        <button>Паперові вироби</button>
-        <button>Набори</button>
+    <p style="color: var(--text-muted); margin-bottom: 24px;">Знайдіть ідеальний подарунок з нашої колекції унікальних сувенірів</p>
+    <div class="filters-list">
+        <button class="btn btn-outline-dark active">Всі товари</button>
+        <button class="btn btn-outline-dark">Посуд</button>
+        <button class="btn btn-outline-dark">Аксесуари</button>
+        <button class="btn btn-outline-dark">Декор</button>
+        <button class="btn btn-outline-dark">Текстиль</button>
+        <button class="btn btn-outline-dark">Одяг</button>
+        <button class="btn btn-outline-dark">Паперові вироби</button>
+        <button class="btn btn-outline-dark">Набори</button>
     </div>
-    <article class="product-items popular-products">
+    <div class="products-grid" style="margin-top: 40px;">
         <div class="product-card">
-            <img src="img/1.png" alt="Керамічна чашка">
-            <div class="card-info">
-                <span class="type">Посуд</span>
-                <h3>Святкова чашка</h3>
-                <p>Керамічна чашка з авторським дизайном</p>
-                <div class="price">
-                    <span class="cost">299 ₴</span>
-                    <span class="availability">В наявності</span>
+            <img src="img/1.png" alt="Керамічна чашка" class="product-card-img">
+            <div class="product-card-content">
+                <span class="product-type">Посуд</span>
+                <h3 class="product-title">Святкова чашка</h3>
+                <p class="product-desc">Керамічна чашка з авторським дизайном</p>
+                <div class="product-footer">
+                    <span class="product-price">299 ₴</span>
+                    <span class="product-status">В наявності</span>
                 </div>
-                <button>
+                <button class="btn btn-primary btn-full">
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg></span>
                     <span>У кошик</span>
                 </button>
             </div>
         </div>
         <div class="product-card">
-            <img src="img/2.png" alt="М'яка іграшка">
-            <div class="card-info">
-                <span class="type">Аксесуари</span>
-                <h3>Сувенірна лялька</h3>
-                <p>Стильний брелок з натуральних матеріалів</p>
-                <div class="price">
-                    <span class="cost">149 ₴</span>
-                    <span class="availability">В наявності</span>
+            <img src="img/2.png" alt="М'яка іграшка" class="product-card-img">
+            <div class="product-card-content">
+                <span class="product-type">Аксесуари</span>
+                <h3 class="product-title">Сувенірна лялька</h3>
+                <p class="product-desc">Стильний брелок з натуральних матеріалів</p>
+                <div class="product-footer">
+                    <span class="product-price">149 ₴</span>
+                    <span class="product-status">В наявності</span>
                 </div>
-                <button>
+                <button class="btn btn-primary btn-full">
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg></span>
                     <span>У кошик</span>
                 </button>
             </div>
         </div>
         <div class="product-card">
-            <img src="img/3.png" alt="Магніти">
-            <div class="card-info">
-                <span class="type">Декор</span>
-                <h3>Набір магнітів</h3>
-                <p>Декоративний магніт з міськими пейзажами</p>
-                <div class="price">
-                    <span class="cost">89 ₴</span>
-                    <span class="availability">В наявності</span>
+            <img src="img/3.png" alt="Магніти" class="product-card-img">
+            <div class="product-card-content">
+                <span class="product-type">Декор</span>
+                <h3 class="product-title">Набір магнітів</h3>
+                <p class="product-desc">Декоративний магніт з міськими пейзажами</p>
+                <div class="product-footer">
+                    <span class="product-price">89 ₴</span>
+                    <span class="product-status">В наявності</span>
                 </div>
-                <button>
+                <button class="btn btn-primary btn-full">
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg></span>
                     <span>У кошик</span>
                 </button>
             </div>
         </div>
         <div class="product-card">
-            <img src="img/4.png" alt="Декор">
-            <div class="card-info">
-                <span class="type">Текстиль</span>
-                <h3>Подушки для дому</h3>
-                <p>М'яка подушка з оригінальною вишивкою</p>
-                <div class="price">
-                    <span class="cost">449 ₴</span>
-                    <span class="availability">В наявності</span>
+            <img src="img/4.png" alt="Декор" class="product-card-img">
+            <div class="product-card-content">
+                <span class="product-type">Текстиль</span>
+                <h3 class="product-title">Подушки для дому</h3>
+                <p class="product-desc">М'яка подушка з оригінальною вишивкою</p>
+                <div class="product-footer">
+                    <span class="product-price">449 ₴</span>
+                    <span class="product-status">В наявності</span>
                 </div>
-                <button>
+                <button class="btn btn-primary btn-full">
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg></span>
                     <span>У кошик</span>
                 </button>
             </div>
         </div>
         <div class="product-card">
-            <img src="img/1.png" alt="Керамічна чашка">
-            <div class="card-info">
-                <span class="type">Посуд</span>
-                <h3>Святкова чашка</h3>
-                <p>Керамічна чашка з авторським дизайном</p>
-                <div class="price">
-                    <span class="cost">299 ₴</span>
-                    <span class="availability">В наявності</span>
+            <img src="img/5.png" alt="Керамічна чашка" class="product-card-img">
+            <div class="product-card-content">
+                <span class="product-type">Одяг</span>
+                <h3 class="product-title">Сувенірна футболка</h3>
+                <p class="product-desc">Якісна футболка з унікальним принтом</p>
+                <div class="product-footer">
+                    <span class="product-price">399 ₴</span>
+                    <span class="product-status">В наявності</span>
                 </div>
-                <button>
+                <button class="btn btn-primary btn-full">
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg></span>
                     <span>У кошик</span>
                 </button>
             </div>
         </div>
         <div class="product-card">
-            <img src="img/2.png" alt="М'яка іграшка">
-            <div class="card-info">
-                <span class="type">Аксесуари</span>
-                <h3>Сувенірна лялька</h3>
-                <p>Стильний брелок з натуральних матеріалів</p>
-                <div class="price">
-                    <span class="cost">149 ₴</span>
-                    <span class="availability">В наявності</span>
+            <img src="img/6.png" alt="М'яка іграшка" class="product-card-img">
+            <div class="product-card-content">
+                <span class="product-type">Паперові вироби</span>
+                <h3 class="product-title">Листівка ручної роботи</h3>
+                <p class="product-desc">Ексклюзивна листівка ручної роботи</p>
+                <div class="product-footer">
+                    <span class="product-price">59 ₴</span>
+                    <span class="product-status">В наявності</span>
                 </div>
-                <button>
+                <button class="btn btn-primary btn-full">
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg></span>
                     <span>У кошик</span>
                 </button>
             </div>
         </div>
         <div class="product-card">
-            <img src="img/3.png" alt="Магніти">
-            <div class="card-info">
-                <span class="type">Декор</span>
-                <h3>Набір магнітів</h3>
-                <p>Декоративний магніт з міськими пейзажами</p>
-                <div class="price">
-                    <span class="cost">89 ₴</span>
-                    <span class="availability">В наявності</span>
+            <img src="img/7.png" alt="Магніти" class="product-card-img">
+            <div class="product-card-content">
+                <span class="product-type">Декор</span>
+                <h3 class="product-title">Ароматична свічка</h3>
+                <p class="product-desc">Свічка ручної роботи з натуральних компонентів</p>
+                <div class="product-footer">
+                    <span class="product-price">279 ₴</span>
+                    <span class="product-status">В наявності</span>
                 </div>
-                <button>
+                <button class="btn btn-primary btn-full">
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg></span>
                     <span>У кошик</span>
                 </button>
             </div>
         </div>
         <div class="product-card">
-            <img src="img/" alt="Декор">
-            <div class="card-info">
-                <span class="type">Текстиль</span>
-                <h3>Подушки для дому</h3>
-                <p>М'яка подушка з оригінальною вишивкою</p>
-                <div class="price">
-                    <span class="cost">449 ₴</span>
-                    <span class="availability">В наявності</span>
+            <img src="img/8.png" alt="Декор" class="product-card-img">
+            <div class="product-card-content">
+                <span class="product-type">Набори</span>
+                <h3 class="product-title">Набір сувенірів</h3>
+                <p class="product-desc">Подарунковий набір унікальних сувенірів</p>
+                <div class="product-footer">
+                    <span class="product-price">899 ₴</span>
+                    <span class="product-status">В наявності</span>
                 </div>
-                <button>
+                <button class="btn btn-primary btn-full">
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg></span>
                     <span>У кошик</span>
                 </button>
             </div>
         </div>
-    </article>
+    </div>
 </main>
 
 <footer>
-    <div class="container footer-content">
+    <div class="container">
         <div class="footer-column about">
             <div class="logo">
                 <a href="#">
                     <span class="logo-img">🎁</span>
-                    <span class="logo-text footer-logo-text">Світ Сувенірів</span>
+                    <span class="logo-text" style="color: var(--white);">Світ Сувенірів</span>
                 </a>
             </div>
             <p class="footer-desc">Унікальні сувеніри для особливих моментів. Ми створюємо спогади, які залишаються назавжди.</p>
@@ -192,7 +194,7 @@
         </div>
         <div class="footer-column">
             <h4>Швидкі посилання</h4>
-            <ul>
+            <ul class="footer-list">
                 <li><a href="#">Каталог товарів</a></li>
                 <li><a href="#">Про нас</a></li>
                 <li><a href="#">Контакти</a></li>
@@ -201,7 +203,7 @@
         </div>
         <div class="footer-column">
             <h4>Категорії</h4>
-            <ul>
+            <ul class="footer-list">
                 <li><a href="#">Посуд</a></li>
                 <li><a href="#">Аксесуари</a></li>
                 <li><a href="#">Декор</a></li>
@@ -234,28 +236,5 @@
 </footer>
 </body>
 
-<script>
-    const buttons = document.querySelectorAll('.filter-buttons button');
-
-    buttons.forEach(button => {
-        button.addEventListener('click', function() {
-            buttons.forEach(btn => btn.classList.remove('active'));
-            this.classList.add('active');
-
-            const selectedCategory = button.innerText.trim().toLowerCase();
-            const cards = document.querySelectorAll('.product-card');
-
-            cards.forEach(card => {
-                const productType = card.querySelector('.type').innerText.trim().toLowerCase();
-
-                if (selectedCategory === 'всі товари' || selectedCategory === productType) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        });
-    });
-
-</script>
+<script src="script/script.js"></script>
 </html>
