@@ -25,7 +25,12 @@
 
         <div class="header-btns">
             <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></button>
-            <a href="cart.html"><button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg></button></a>
+            <a href="cart.html" class="cart-btn">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+                    <span class="cart-badge">0</span>
+                </button>
+            </a>
         </div>
     </div>
 </header>
@@ -33,7 +38,7 @@
 
 <main class="container section-padding">
     <h1>Каталог товарів</h1>
-    <p style="color: var(--text-muted); margin-bottom: 24px;">Знайдіть ідеальний подарунок з нашої колекції унікальних сувенірів</p>
+    <p>Знайдіть ідеальний подарунок з нашої колекції унікальних сувенірів</p>
     <div class="filters-list">
         <button class="btn btn-outline-dark active">Всі товари</button>
         <button class="btn btn-outline-dark">Посуд</button>
@@ -45,7 +50,7 @@
         <button class="btn btn-outline-dark">Набори</button>
     </div>
     <div class="products-grid" style="margin-top: 40px;">
-        <div class="product-card">
+        <div class="product-card" id="prod-1">
             <img src="img/1.png" alt="Керамічна чашка" class="product-card-img">
             <div class="product-card-content">
                 <span class="product-type">Посуд</span>
@@ -61,7 +66,7 @@
                 </button>
             </div>
         </div>
-        <div class="product-card">
+        <div class="product-card" id="prod-2">
             <img src="img/2.png" alt="М'яка іграшка" class="product-card-img">
             <div class="product-card-content">
                 <span class="product-type">Аксесуари</span>
@@ -77,7 +82,7 @@
                 </button>
             </div>
         </div>
-        <div class="product-card">
+        <div class="product-card" id="prod-3">
             <img src="img/3.png" alt="Магніти" class="product-card-img">
             <div class="product-card-content">
                 <span class="product-type">Декор</span>
@@ -93,7 +98,7 @@
                 </button>
             </div>
         </div>
-        <div class="product-card">
+        <div class="product-card" id="prod-4">
             <img src="img/4.png" alt="Декор" class="product-card-img">
             <div class="product-card-content">
                 <span class="product-type">Текстиль</span>
@@ -109,7 +114,7 @@
                 </button>
             </div>
         </div>
-        <div class="product-card">
+        <div class="product-card" id="prod-5">
             <img src="img/5.png" alt="Керамічна чашка" class="product-card-img">
             <div class="product-card-content">
                 <span class="product-type">Одяг</span>
@@ -125,7 +130,7 @@
                 </button>
             </div>
         </div>
-        <div class="product-card">
+        <div class="product-card" id="prod-6">
             <img src="img/6.png" alt="М'яка іграшка" class="product-card-img">
             <div class="product-card-content">
                 <span class="product-type">Паперові вироби</span>
@@ -141,7 +146,7 @@
                 </button>
             </div>
         </div>
-        <div class="product-card">
+        <div class="product-card" id="prod-7">
             <img src="img/7.png" alt="Магніти" class="product-card-img">
             <div class="product-card-content">
                 <span class="product-type">Декор</span>
@@ -157,7 +162,7 @@
                 </button>
             </div>
         </div>
-        <div class="product-card">
+        <div class="product-card" id="prod-8">
             <img src="img/8.png" alt="Декор" class="product-card-img">
             <div class="product-card-content">
                 <span class="product-type">Набори</span>
@@ -182,7 +187,7 @@
             <div class="logo">
                 <a href="#">
                     <span class="logo-img">🎁</span>
-                    <span class="logo-text" style="color: var(--white);">Світ Сувенірів</span>
+                    <span class="logo-text">Світ Сувенірів</span>
                 </a>
             </div>
             <p class="footer-desc">Унікальні сувеніри для особливих моментів. Ми створюємо спогади, які залишаються назавжди.</p>
@@ -195,19 +200,19 @@
         <div class="footer-column">
             <h4>Швидкі посилання</h4>
             <ul class="footer-list">
-                <li><a href="#">Каталог товарів</a></li>
-                <li><a href="#">Про нас</a></li>
-                <li><a href="#">Контакти</a></li>
-                <li><a href="#">Доставка та оплата</a></li>
+                <li><a href="catalog.html">Каталог товарів</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+                <li><a href="cart.html">Доставка та оплата</a></li>
             </ul>
         </div>
         <div class="footer-column">
             <h4>Категорії</h4>
             <ul class="footer-list">
-                <li><a href="#">Посуд</a></li>
-                <li><a href="#">Аксесуари</a></li>
-                <li><a href="#">Декор</a></li>
-                <li><a href="#">Текстиль</a></li>
+                <li><a href="catalog.html?category=Посуд">Посуд</a></li>
+                <li><a href="catalog.html?category=Аксесуари">Аксесуари</a></li>
+                <li><a href="catalog.html?category=Декор">Декор</a></li>
+                <li><a href="catalog.html?category=Текстиль">Текстиль</a></li>
             </ul>
         </div>
         <div class="footer-column contacts">
@@ -234,7 +239,6 @@
         <p>&copy; 2026 Світ Сувенірів. Всі права захищені.</p>
     </div>
 </footer>
-</body>
-
 <script src="script/script.js"></script>
+</body>
 </html>

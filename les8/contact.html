@@ -25,7 +25,12 @@
 
         <div class="header-btns">
             <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></button>
-            <a href="cart.html"><button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg></button></a>
+            <a href="cart.html" class="cart-btn">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+                    <span class="cart-badge">0</span>
+                </button>
+            </a>
         </div>
     </div>
 </header>
@@ -80,42 +85,42 @@
                 </div>
             </div>
         </div>
-        <div class="contact-send-form">
+        <form class="contact-send-form">
             <h3>Надішліть нам повідомлення</h3>
             <div class="contact-name-email">
                 <div>
                     <label class="contact-label">
                         Ім'я
-                        <input type="text" placeholder="Ваше ім'я">
+                        <input type="text" placeholder="Ваше ім'я" id="contact-name" required>
                     </label>
                 </div>
                 <div>
                     <label class="contact-label">
                         Email
-                        <input type="text" placeholder="your@email.com">
+                        <input type="email" placeholder="your@email.com" id="contact-email" required>
                     </label>
                 </div>
             </div>
             <div>
                 <label class="contact-label">
                     Телефон
-                    <input type="text" placeholder="+380">
+                    <input type="tel" placeholder="+380" id="contact-phone" required pattern="[+]?[0-9\s\-\(\)]+" title="Будь ласка, введіть коректний номер телефону (лише цифри, пробіли, +, -, ())">
                 </label>
             </div>
             <div>
                 <label class="contact-label">
                     Тема
-                    <input type="text" placeholder="Тема звернення">
+                    <input type="text" placeholder="Тема звернення" id="contact-subject" required>
                 </label>
             </div>
             <div>
-                <label class="contact-label">
+                <label class="contact-label contact-message" id="contact-message" >
                     Повідомлення
-                    <input type="text" placeholder="Ваше повідомлення...">
+                    <input type="text" placeholder="Ваше повідомлення..." required>
                 </label>
             </div>
-            <button>Надіслати повідомлення</button>
-        </div>
+            <button type="submit" class="btn btn-primary btn-full">Надіслати повідомлення</button>
+        </form>
     </section>
 </main>
 
@@ -125,7 +130,7 @@
             <div class="logo">
                 <a href="#">
                     <span class="logo-img">🎁</span>
-                    <span class="logo-text" style="color: var(--white);">Світ Сувенірів</span>
+                    <span class="logo-text">Світ Сувенірів</span>
                 </a>
             </div>
             <p class="footer-desc">Унікальні сувеніри для особливих моментів. Ми створюємо спогади, які залишаються назавжди.</p>
@@ -147,10 +152,10 @@
         <div class="footer-column">
             <h4>Категорії</h4>
             <ul class="footer-list">
-                <li><a href="#">Посуд</a></li>
-                <li><a href="#">Аксесуари</a></li>
-                <li><a href="#">Декор</a></li>
-                <li><a href="#">Текстиль</a></li>
+                <li><a href="catalog.html?category=Посуд">Посуд</a></li>
+                <li><a href="catalog.html?category=Аксесуари">Аксесуари</a></li>
+                <li><a href="catalog.html?category=Декор">Декор</a></li>
+                <li><a href="catalog.html?category=Текстиль">Текстиль</a></li>
             </ul>
         </div>
         <div class="footer-column contacts">
@@ -177,5 +182,6 @@
         <p>&copy; 2026 Світ Сувенірів. Всі права захищені.</p>
     </div>
 </footer>
+<script src="script/script.js"></script>
 </body>
 </html>
