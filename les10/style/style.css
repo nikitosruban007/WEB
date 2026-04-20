@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --element-background: #F4D3D3;
+    --transition: 0.15s ease-in-out;
+    --a-normal: #006EBE;
+    --a-hover: #5EAAE0;
+    --a-visited: #0B257D;
+    --date-background: #E9E9E9;
+}
+
+body {
+    background-color: #C9A5AA;
+    font-family: 'Verdana', 'sans-serif'
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    letter-spacing: 0;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.75rem 0.75rem 2.5rem 0.75rem;
+}
+
+ul, li {
+    list-style: none;
+}
+
+header {
+    font-family: 'Arimo', 'sans-serif';
+    text-align: center;
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    letter-spacing: 0;
+    margin-bottom: 1rem;
+}
+
+.menu {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.menu-nav{
+    font-family: 'Arial Black', 'sans-serif';
+    border: 0.0625rem solid var(--element-background);
+    background-color: var(--element-background);
+    padding: 0.625rem 0;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.menu-list li {
+    display: grid;
+    grid-auto-flow: row;
+    text-decoration: none;
+    border: 0.0625rem solid var(--element-background);
+    background-color: var(--element-background);;
+    padding: 0.375rem 0;
+}
+
+.menu-list li:last-child {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.menu-list li a {
+    color: var(--a-normal);
+    text-decoration: none;
+}
+
+.menu-list li:hover {
+    background-color: #FFF;
+    transition: var(--transition);
+}
+
+.menu-list li:hover a {
+    color: var(--a-hover);
+}
+
+/*.menu-list li a:visited{
+    color: var(--a-visited);
+}
+якщо у посилань будуть НЕ #, то норм буде
+*/
+
+main {
+    background-color: #FFF;
+    padding: 1rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.date-main {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--date-background);
+    letter-spacing: 0;
+}
+
+.main-info-wrapper {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1rem;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.name-wrapper {
+    font-size: 1.5rem;
+    letter-spacing: 0;
+}
+
+.main-info, .biography, .position, .films {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 0.5rem;
+}
+
+.films ol {
+    border-top: 0.0625rem solid #C9A5AA;
+    list-style-position: inside;
+}
+
+.films ol li {
+    padding: 0.625rem;
+    border-bottom: 0.0625rem solid #C9A5AA;
+    font-size: 0.875rem;
+}
+
+.films ol li:nth-child(odd) {
+    background-color: #FFF;
+}
+
+.films ol li:nth-child(even) {
+    background-color: #FDF1F1;
+}
+
+.films ol li:first-child {
+    background-color: #FFF9EE;
+}
+
+h2 {
+    font-size: 1.125rem;
+    letter-spacing: 0;
+}
+
+figure {
+    background-color: var(--element-background);
+    border-radius: 0.5rem;
+}
+
+figcaption {
+    font-size: 0.75rem;
+    line-height: 1.3125rem;
+    letter-spacing: 0;
+    font-style: italic;
+    text-align: center;
+    margin: 0.625rem 0;
+}
+
+footer {
+    font-family: 'Arimo', 'sans-serif';
+    font-size: 0.75rem;
+    line-height: 1.3125rem;
+    letter-spacing: 0;
+    padding: 1.25rem 0 1.25rem 1.25rem;
+    background-color: var(--element-background);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+@media (min-width: 620px) {
+    .wrapper {
+        padding: 1.5rem 3.5625rem 2.405rem 3.5rem;
+    }
+    .menu-nav {
+        display: none;
+    }
+    .menu-list li {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    .menu-list a {
+        padding: 0.625rem 0.375rem;
+    }
+}
+
+
+
+
+
