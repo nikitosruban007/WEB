@@ -132,7 +132,6 @@ main {
 }
 
 .films ol {
-    border-top: 0.0625rem solid #C9A5AA;
     list-style-position: inside;
 }
 
@@ -140,6 +139,10 @@ main {
     padding: 0.625rem;
     border-bottom: 0.0625rem solid #C9A5AA;
     font-size: 0.875rem;
+}
+
+.films ol li:last-child {
+    border-bottom: none;
 }
 
 .films ol li:nth-child(odd) {
@@ -188,18 +191,114 @@ footer {
     .wrapper {
         padding: 1.5rem 3.5625rem 2.405rem 3.5rem;
     }
+
     .menu-nav {
         display: none;
     }
-    .menu-list li {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
+
+    img {
+        display: block;
+        margin: 1.25rem 1.875rem 0;
+        max-width: calc(100% - 3.75rem);
     }
 
-    .menu-list a {
-        padding: 0.625rem 0.375rem;
+    p {
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.3125rem;
+        letter-spacing: 0;
     }
+
+    h2 {
+        font-size: 1.5rem;
+        letter-spacing: 0;
+    }
+
+    .name-wrapper {
+        font-size: 2.625rem;
+        letter-spacing: 0;
+    }
+
+    main {
+        padding: 1rem 3.75rem;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 0.875rem;
+        line-height: 1.3125rem;
+        letter-spacing: 0;
+        padding: 1.25rem 0 1.25rem 0;
+    }
+
+    figcaption {
+        font-size: 1rem;
+        line-height: 1.3125rem;
+    }
+
+    .menu-list {
+        display: flex;
+    }
+
+    .menu-list li {
+        padding: 0.375rem 0.625rem;
+    }
+
+    .menu-list li:last-child {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+    }
+
+    .menu-list li:first-child {
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+    }
+
+}
+
+@media (min-width: 820px) {
+    .wrapper {
+        padding: 4rem 13.5rem 1.8125rem 11.5rem;
+    }
+
+    img {
+        display: block;
+        margin: 2.1875rem 1.875rem 0 1.875rem;
+        max-width: calc(100% - 3.75rem);
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.3125rem;
+        letter-spacing: 0;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        letter-spacing: 0;
+    }
+
+    .menu {
+        background-color: var(--element-background);
+        border-radius: 0.5rem;
+        padding: 0.25rem;
+    }
+
+    .menu-list {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-list li {
+        border-radius: 0.5rem;
+    }
+
+    .menu-list li:last-child {
+        border-bottom-left-radius: 0.5rem;
+    }
+
 }
 
 
