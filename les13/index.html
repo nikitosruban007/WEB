@@ -12,7 +12,7 @@
     <header>
         <h1>Форма прийому на роботу</h1>
         <p>ІТ Компанія "TechInnovate"</p>
-        <p>Поля позначені синьою лінією є обов'язковими для заповнення</p>
+        <p class="info-req">Поля позначені синьою лінією є обов'язковими для заповнення</p>
     </header>
     <main>
         <form action="">
@@ -40,10 +40,12 @@
                 </div>
             </section>
             <section class="professional-info form-section">
+                <h2>Професійна інформація</h2>
                 <div class="block">
                     <label>
                         Бажана позиція *<br>
                         <select name="professional" id="professional">
+                            <option value="select">Оберіть позицію</option>
                             <option value="frontend">Frontend Developer</option>
                             <option value="backend">Backend Developer</option>
                             <option value="fullstack">Full Stack Developer</option>
@@ -65,14 +67,15 @@
                 </label>
             </section>
             <section class="additional-info form-section">
+                <h2>Додаткова інформація</h2>
                 <div class="block">
                     <label>
                         GitHub профіль<br>
-                        <input type="text" name="tech" placeholder="React, TypeScript, Node.js, Python...">
+                        <input type="text" name="tech" placeholder="https://github.com/username">
                     </label>
                     <label>
                         Портфоліо<br>
-                        <input type="text" name="tech" placeholder="React, TypeScript, Node.js, Python...">
+                        <input type="text" name="tech" placeholder="https://yourportfolio.com">
                     </label>
                 </div>
                 <label>
@@ -81,9 +84,12 @@
                 </label>
                 <label>
                     Коротко про себе *
-                    <textarea name="about" required minlength="50" rows="5" placeholder="Розкажіть про свій досвід, мотивацію та чому ви хочете приєднатися до нашої команди... (мінімум 50 символів)">
-
-                    </textarea>
+                    <textarea
+                            name="about"
+                            required
+                            minlength="50"
+                            rows="5"
+                            placeholder="Розкажіть про свій досвід, мотивацію та чому ви хочете приєднатися до нашої команди... (мінімум 50 символів)"></textarea>
                 </label>
             </section>
             <section class="checkbox-section form-section">
