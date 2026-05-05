@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.flag {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #fff;
+}
+
+.rays {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    filter: drop-shadow(0 0 2px #c4002f) drop-shadow(0 0 6px rgba(196, 0, 47, 0.4));
+}
+
+.rays span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 19.7vmax;
+    height: 100vmax;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    transform-origin: center bottom;
+    transform: translate(-50%, -100%) rotate(var(--a));
+}
+
+.rays span::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #c4002f;
+    transform-origin: center bottom;
+    transform: scaleY(0);
+    opacity: 0;
+}
+
+.sun {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background: #c4002f;
+    z-index: 2;
+    cursor: pointer;
+    box-shadow:
+            0 0 8px #c4002f,
+            0 0 20px rgba(196, 0, 47, 0.3);
+}
+
+.flag:has(.sun:hover) .rays span::before {
+    animation: beam 3.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation-delay: var(--d);
+}
+
+@keyframes beam {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
